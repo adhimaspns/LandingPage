@@ -1,0 +1,285 @@
+/*? All Version */
+  /*! Navbar */
+    .navbar{
+      position: relative;
+      z-index: 1;
+    }
+    .navbar .container .navbar-brand{
+      font-family: Viga;
+      font-size: 22px;
+      color: #000000;
+      margin: auto;
+
+    }
+    .navbar .tombol{
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+  /*! Akhir Navbar */
+
+  /*! Jumbotron  */
+    .jumbotron{
+      background-image:url('../img/jumbotron-bg.jpg') ;
+      background-size: cover;
+      height: 540px;
+      text-align: center;
+      position: relative;
+      background-attachment: fixed;
+    }
+    .jumbotron::after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)) ;
+      position: absolute;
+      bottom: 0; 
+    }
+    .jumbotron .display-4{
+      font-family: arial;
+      color: #dddddc;
+      margin-top: 100px;
+      /* font-weight: lighter;   */
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+      font-size: 40px;
+    }
+    .jumbotron .display-4 span{
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .jumbotron .tombol{
+      border-radius: 20px;
+      margin: auto;
+    }
+    .jumbotron .container{
+      position: relative;
+      z-index: 1;
+    }
+  /*! AkhirJumbotron  */
+
+  /*! Info Panel */
+  .info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin-top: -100px;
+    padding: 30px;
+  }
+  .info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  /*! Akhir Info Panel */
+
+  /*! Workkingspace */
+    .workingspace{
+      margin-top: 120px;
+      text-align: center;
+    }
+    .workingspace .tombol{
+      border-radius: 20px;
+    }
+    .workingspace p{
+      font-size: 18px;
+      font-weight: 200;
+    }
+    .workingspace .tombol{
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    }
+    .workingspace h3{
+      font-size: 43px;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+    .workingspace span{
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+  /*! Akhir Workkingspace */
+
+
+  /*! Testimonial */
+    .testimonial{
+      margin-top: 100px;
+    }
+    .testimonial h5{
+      text-align: center;
+      font-weight: 200;
+      font-style: italic;
+      font-size: 24px;
+    }
+    .testimonial{
+      text-align: center;
+      padding-bottom: 100px;
+    }
+    .testimonial .figure img{
+      width: 90px;
+      margin-top: 30px;
+      box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    .testimonial .carousel span{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  /*! Akhir Testimonial */
+
+  /*! Footer */
+    .footer{
+      width: 100%;
+      height: 50px;
+      color: #ACACAC;
+      /* background-color: #141526; */
+      bottom: 0 !important;
+    }
+    .footer p{
+      text-align: center;
+      line-height: 50px;
+    }
+    .footer span{
+      color:  #141526 ;
+    }
+  /*! Akhir Footer */
+/*? Akhir All Version */
+
+
+/*? Desktop Version */
+  @media (min-width: 992px){
+    /*! Navbar */
+      .navbar{
+        transition: .3s;
+      }
+      .navbar .container .navbar-brand{
+        color: #ffffff;
+        font-size: 32px;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+      }
+      .navbar .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+        transition: .5s;
+      }
+      .navbar-light .navbar-nav .nav-link{
+        color: #ffffff;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+      }
+      .navbar .nav-link:hover{
+        color: #ffffff !important;
+      }
+      .nav-link:hover::after{
+        content: '';
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        margin-bottom: -6px;
+      }
+      .navbar .tombol{
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+      }      
+      
+    /*! Akhir Navbar */
+
+    /*! Jumbotron  */
+      .jumbotron{
+        background-image:url('../img/jumbotron-bg.jpg') ;
+        background-size: cover;
+        height: 640px;
+        margin-top: -74px;
+      }
+      .jumbotron .display-4{
+        font-family: arial;
+        margin-top: 150px;
+        font-weight: lighter;  
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        font-size: 62px;
+        transition: 0.5s !important;
+      }
+      .jumbotron .display-4 span:hover{
+        border-bottom: 1px solid #ffffff;
+      }
+      .jumbotron .tombol{
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+      }
+    /*! AkhirJumbotron  */
+
+    /*! Info Panel */
+      .info-panel{
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        background-color: #ffffff;
+        margin-top: -100px;
+        padding: 30px;
+      }
+      .info-panel img{
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        transition: .3s;
+      }
+      .info-panel h4{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 5px;
+        transition: .3s;
+      }
+      .info-panel img:hover{
+        border-radius:5px;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .info-panel h4:hover{
+        font-size: 18px;
+      }
+      .info-panel:hover{
+        box-shadow: 0 3px 30px rgba(42,215,214, 0.5);
+      }
+    /*! Akhir Info Panel */
+
+    /*! Workkingspace */
+    .workingspace{
+      text-align: left;
+    }
+    .workingspace h3{
+      font-size: 53px;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+    .workingspace span{
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .workingspace p{
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: 200;
+    }
+    .workingspace .tombol{
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    }
+    /*! Akhir Workkingspace */
+
+    /*! Testimonial */
+      .testimonial{
+        text-align: center;
+      }
+      .testimonial h5{
+        font-size: 32px;
+      }
+      .testimonial .figure img{
+        width: 90px;
+        margin-top: 30px;
+        box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+    /*! AkhirTestimonial */
+  }
+/*? Akhir Desktop Version */
